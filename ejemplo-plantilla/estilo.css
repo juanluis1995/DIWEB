@@ -1,0 +1,36 @@
+body
+{
+    margin: 10%;
+    background-color: lightgray;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 300%;
+
+}
+
+h2
+{
+    color: white;
+    background-color: gray;
+}
+
+p
+{
+    
+}
+
+strong
+{
+    background-color:white;
+}
+
+em
+{
+    color: red;
+}
