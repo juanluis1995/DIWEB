@@ -1,0 +1,53 @@
+body
+{
+    background-color: #C6D9EE;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+h1
+{
+    font-size: 3em;
+    text-align: right;
+}
+
+h2
+{
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+p
+{
+    text-indent: 3%;
+    line-height: 2em;
+}
+
+span
+{
+    color: red;
+    font-family: cursive;
+}
+
+strong
+{
+    color: #D2691E;
+}
+
+time
+{
+    color: #FF8C00;
+}
+
+em
+{
+    color: #008000;
+    background-color: white;
+}
+
+address
+{
+    text-align: center;
+    font-size: 0.8em;
+}
