@@ -1,0 +1,60 @@
+body
+{
+    background-color: #CBAC4D;
+}
+
+/*Declaración de nuevo tipo de letra a partir de un archivo WOFF existente*/
+@font-face
+{
+    font-family: "Título";
+    src: url("ribeye-marrow.woff");
+}
+
+h1
+{
+    font-family: "Título";
+    font-size: 310%;
+    text-align: center;
+    letter-spacing: 23px;
+    text-transform: uppercase;
+}
+
+p
+{
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    padding-left: 30%;
+}
+
+@font-face
+{
+    font-family: "h2n";
+    src: url("lobster.woff");
+}
+
+h2.negro
+{
+    font-family: h2n;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+@font-face
+{
+    font-family: "h2b";
+    src: url("just-another-hand.woff");
+}
+
+h2.blanco
+{
+    font-family: h2b;
+    color: white;
+    text-align: right;
+    font-size: 3em;
+}
+
+em
+{
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+body
+{
+    background-color: #2D8652;
+}
+
+h1
+{
+    font-family: sans-serif;
+    font-size: 3em;
+    text-transform: capitalize;         /*Convierte la primera letra de cada palabra en mayúscula*/
+}
+
+div
+{
+    line-height: 160%;
+}
+
+em
+{
+    color: white;
+    font-size: 24px;
+}
+
+p.p1
+{
+    color: #FFDFB3;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+p.p2
+{
+    color: #FF9F1A;
+    font-size: 26px;
+    font-family: monospace;
+}
+
+span
+{
+    color: #E6194D;
+    font-size: 24px;
+    font-family: cursive;
+}
