@@ -35,6 +35,7 @@ div.div2
     margin-right: 9.5%;
     padding-left: 0.8%;
     padding-right: 0.8%;
+    padding-bottom: 0.8%;
 }
 
 div.cuadrado
@@ -43,22 +44,21 @@ div.cuadrado
     padding-bottom: 2%;
 }
 
-
 p
 {
     font-size: 1.5em;
     text-align: justify;
 }
 
-
 section
 {
     color: white;
     font-size: 1.5em;
-    border: solid;
+    border: solid 10px;
     border-color: #422B24;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 2%;
     text-align: justify;
     padding: 1%;
     line-height: 180%;
