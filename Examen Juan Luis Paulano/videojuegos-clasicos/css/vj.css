@@ -1,0 +1,92 @@
+
+body
+{
+    background-color: black;
+    color: white;
+    text-align: justify;
+}
+
+@font-face
+{
+    font-family: "Titulo";
+    src: url("../fonts/monoton.woff2");
+}
+
+h1
+{
+    font-family: Titulo;
+    text-align: center;
+    color: lime;
+    text-decoration: underline;
+    letter-spacing: 10px;
+}
+
+h2
+{
+    background-color: lime;
+    border-bottom: white solid;
+    letter-spacing: 3px;
+    margin-top: 0%;
+    padding-left: 1%;
+}
+
+.pong
+{
+    border: solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+.space
+{
+    border: solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+.pac
+{
+    border: solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+p
+{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.imgPong
+{
+    border: green solid;
+    float: right;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+time
+{
+    color: green;
+}
+
+strong
+{
+    color: yellow;
+}
+
+em
+{
+    color: red;
+}
+
+footer
+{
+    border-top: green solid;
+    border-bottom: green solid;
+    margin-left: 10%;
+    margin-right: 10%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Emojis. Examen. Páginas web HTML y hojas de estilo CSS. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<h1>Secuencias Zero-Width Joiner</h1>
+
+<p>El <strong>carácter ZWJ</strong> (Zero-Width Joiner, es decir Conector sin anchura) es el carácter Unicode U+200D. Se introdujo para indicar que dos o 
+más caracteres se deben escribir en forma conectada, y se utiliza de forma habitual en escrituras como la árabe o las indias. 
+El <strong>carácter ZWJ</strong> se escribe entre los dos caracteres que se quieren considerar conjuntamente.</p>
+
+<p>Posteriormente, el uso del <strong>carácter ZWJ</strong> se ha extendido para otros usos, permitiendo unir caracteres para producir un nuevo carácter. 
+En el caso de los strongojis, el <strong>carácter ZWJ</strong> permite combinar dos o más strongojis para generar un nuevo strongoji. De esta manera, por ejstrongplo, 
+se pueden definir strongojis que representen <a>familias de varios mistrongbros</a>, <a>profesiones o actividades con protagonistas fstrongeninos o masculinos</a>,
+especificar un color de piel, etc.</p>
+
+<img src="img/1fa82.svg"/>
+
+<h2>Emojis de familias</h2>
+
+<p>Para mostrar los strongojis correspondientes a las familias, Unicode permite combinar los caracteres correspondientes a un hombre, una mujer, 
+un niño o una niña mediante el carácter ZWJ. Es necesario incluir al menos un adulto y un menor, Se pueden incluir unos o dos adultos y uno o dos 
+menores, todos del mismo o de diferente sexo. Si los adultos son de ambos sexos, el hombre se indica primero. Si los menores son de ambos sexos, 
+la niña se indica primero.</p>
+
+&#x1F468; &#x1F469; &#x1F467; &#x1F466;
+
+<p>Así para indicar una familia formada por un hombre y una mujer con dos niñas, se escribiría:</p>
+
+&#x1F468;&#x0200D;&#x1F469;&#x0200D;&#x1F467;&#x0200D;&#x1F467;
+
+<p>Si no respeta alguna de las reglas, no se mostrará la familia completa sino los caracteres por separado, aunque el navegador intentará 
+interpretar parte de la combinación. Por ejstrongplo, si en el ejstrongplo anterior se escribe primero a la mujer y luego al hombre, la mujer se mostrará 
+de forma separada y se mostraré una familia formada únicamente por el hombre y las dos hijas.</p>
+
+<i>&#x1F469</i>
+&#x1F469;&#x0200D;&#x1F468;&#x0200D;&#x1F467;&#x0200D;&#x1F467;
+
+<h2>Emojis de géneros</h2>
+
+<p>Para mostrar strongojis de individuos con caracteres fstrongeninos o masculinos se utilizan básicamente dos siststrongas, aunque existen también otros tipos 
+de combinaciones.</p>
+
+<p>En unos casos, se escribe la combinación del carácter hombre o mujer con el carácter con relación con la profesión.</p>
+
+<p>Por ejemplo, para mostrar el strongoji de un profesor o de una profesora, se combina mediante el carácter ZWJ, al hombre o a la mujer con el carácter 
+que representa una escuela.</p>
+
+<i>&#x1F468+</i><i>&#x1F3EB=</i><i>&#x0200D</i>
+<i>&#x1F468;&#x0200D;&#x1F3EB;</i><br>
+<i>&#x1F469+</i><i>&#x1F3EB=</i>
+<i>&#x1F469;&#x0200D;&#x1F3EB;</i>
+
+<p>En otros casos, cuando el carácter ya corresponde a un individuo (teóricamente debería ser una figura neutra, ni masculina ni fstrongenina), 
+para especificar si se trata de un hombre o de una mujer se utilizan los símbolos astrológicos del género masculino o fstrongenino. 
+Adstrongás la combinación debe terminar con el carácter &#x0FE0F; (llamado selector de variaciones 16)</p>
+
+<i>&#x1F3C4+</i><i>&#x02640;&#x0FE0F=</i>
+<i>&#x1F3C4;&#x0200D;&#x02640;&#x0FE0F;</i><br>
+<i>&#x1F3C4+</i><i>&#x02642;&#x0FE0F=</i>
+&#x1F3C4;&#x0200D;&#x02642;&#x0FE0F;
+
+</body>
+</html>

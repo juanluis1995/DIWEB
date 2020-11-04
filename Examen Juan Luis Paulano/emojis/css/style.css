@@ -1,0 +1,28 @@
+body
+{
+    margin-left: 34%;
+    margin-right: 34%;
+}
+
+h1
+{
+    font-family: sans-serif;
+}
+
+
+p
+{
+    text-align: justify;
+}
+
+a
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+img
+{
+    height: 90px;
+    width: 90px;
+}
