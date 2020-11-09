@@ -13,12 +13,54 @@ a
 li
 {
     list-style: none;
-
+    float: left;
+    margin-right: 25%;
+    margin-bottom: 5%;
 }
 
-a[rel=next]::before
+a[rel=alternate]::after
 {
-    content: "\f005";
-    font-family: FontAwesome; 
+    content: " Brexit";
+}
 
+a[rel=next]:before
+{
+    content: url('plus-circle-solid.svg');
+    
+}
+
+a[rel=next]:before
+{
+    content: url('plus-circle-solid.svg');
+    
+}
+
+a[rel=tag]:before
+{
+    content: url('cart-plus-solid.svg');
+    
+}
+
+a[rel=bookmark]:before
+{
+    content: url('star-solid.svg');
+    
+}
+
+a[rel=help]:before
+{
+    content: url('file-pdf-solid.svg');
+    
+}
+
+a[rel=search]:before
+{
+    content: url('search-solid.svg');
+    
+}
+
+a[rel=nofollow]:before
+{
+    content: url('shield-alt-solid.svg');
+    
 }

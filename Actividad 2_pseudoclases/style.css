@@ -1,0 +1,35 @@
+h1 
+{
+    font-family: sans-serif;
+}
+
+h2:nth-child(2n)
+{
+    color: red;
+}
+
+h2::first-letter
+{
+    color: red;
+}
+
+li
+{
+    list-style: none;
+}
+
+li:nth-child(3):hover::before
+{
+    content: " Somos elementos impares";
+    color: lime;
+}
+
+li:nth-child(odd):hover::before
+{
+    content: " Somos elementos impares";
+}
+
+li:nth-child(even):hover::after
+{
+    content: "somos elementos pares";
+}
