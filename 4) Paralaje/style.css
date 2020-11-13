@@ -1,0 +1,63 @@
+
+body
+{
+    background-image: url(img/espacio.jpg);
+
+    /*Propiedades para ajustar imagen de fondo*/
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Paradaje*/
+.claseSol
+{
+    background-image: url(img/sol.jpg);
+    position: relative;
+    height: 800px;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.claseLuna
+{
+    background-image: url(img/luna.jpg);
+    width: 1500px;
+    height: 1000px;
+}
+
+
+/*He comentado las líneas siguientes porque hay que agregar las imágenes desde css para utilizar paradaje. No vale la etiqueta <img>*/
+
+/*Las imágenes utilizan posición relativa para que las etiquetas puedan aparecer superpuestas (siempre que su posición sea absoluta) */
+/*Además, utilizo z-index en la etiqueta label para conseguir este fín*/
+/*
+img
+{
+    position: relative;
+    width: 1400px;
+    height: 800px;
+}
+
+label
+{
+    position: absolute;
+    padding-left: 40%;
+    padding-top: 20%;
+    font-family: fantasy;
+    font-size: 100px;
+    z-index: 100;
+}
+
+label.sol
+{
+    color: snow;
+}
+
+label.luna
+{
+    color: red;
+}
+
+*/
