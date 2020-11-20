@@ -1,0 +1,39 @@
+//VARIABLES
+	$color-texto: #eee;
+	$color-textoCursor: #fff;
+	$color-fondo: #666;
+    $color-fondoCursorLista: #888;
+
+    @mixin color-textoFondo() {
+        color: $color-texto;
+        background-color: $color-fondo;
+    }
+
+    @mixin color-textoFondoCursor() { 
+        &:hover {
+            color: $color-textoCursor;
+            background-color: $color-fondoCursorLista;
+        }
+    }
+
+    /*box-sizing para navegadores (genérico)*/
+    @mixin navegador ($property) {
+        box-sizing: $property;
+        -moz-box-sizing: $property; 
+        -webkit-box-sizing: $property;
+    }
+
+    @mixin transiciones ($property, $duration, $timing: linear){
+        transition: $property $duration $timing;
+        -moz-transition: $property $duration $timing;
+        -webkit-transition: $property $duration $timing;
+    }
+
+    //Animaciones
+    @mixin animaciones ($name, $duration, $timing: linear){
+        animation: $property $duration $timing;
+        -moz-animation: $property $duration $timing;
+        -webkit-animation: $property $duration $timing;
+    }
+
+    @import '_menu.scss';
