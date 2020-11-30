@@ -82,7 +82,7 @@ abbr, acronym
         margin: 0 0 10px 10px;
     }
 
-    @media (min-width:1000px) {
+    @media (min-width: 1000px) {
 
         #container
         {
@@ -90,18 +90,55 @@ abbr, acronym
         }
     }
 
-    @media (max-width:1000px) and (min-width:481px) {
-
+    @media (max-width: 1000px) and (min-width: 480px) {
         #container
         {
-            float: left;
-            width: 1000px;
-            background: #bbb;
+            width: 98%;
         }
-
+        #content
+        {
+            /*float: right;*/
+            width: 550px;
+            margin-right: 2%;
+        }
         #extras
         {
+            /*float: right;*/
             width: 550px;
-            background: gray;
+            margin-bottom: 2%;
+            margin-right: 2%;
         }
+        #extras>p
+        {
+            text-align: justify;
+        }
+
+    }
+
+    @media (max-width: 480px){
+        #nav
+        {
+            width: 100%;
+        }
+        img
+        {
+            display: none;
+        }
+
+        #content
+        {
+            /*float: right;*/
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 2%;
+        }
+        #extras
+        {
+            /*float: right;*/
+            width: 100%;
+            margin-bottom: 2%;
+            margin-right: 0%;
+
+        }
+
     }
