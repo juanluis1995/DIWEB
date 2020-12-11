@@ -1,0 +1,82 @@
+    
+    body
+    {
+        background:  linear-gradient(#A8F1D6, #3f87a6);
+    }
+
+    .h3Cuerpo
+    {
+       text-decoration-line: underline;
+    }
+
+    .subCabecera
+    {
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    .contenedorPrincipal
+    {
+        display: grid;
+        grid-template-rows: 30% 30% 30%;
+        row-gap: 5%;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .deporte>img
+    {
+        transition: width, 2s, linear, 2s;
+        transition: height, 2s, linear, 2s;
+    }
+
+    .deporte>img:hover
+    {
+        width: 200%;
+        height: 200%;
+        z-index: 1;         /*Necesario para superponer la imagen al resto de componentes*/
+    }
+
+    .deporte
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 5%;
+    }
+
+    .img
+    {
+        order: 2;
+    }
+
+    .artDcha
+    {
+        order: 1;
+    }
+
+    .botonera
+    {
+        margin-top: 10%;
+        margin-left: 30%;
+        text-align: center;
+        width: 45%;
+    }
+
+    .botonera>a
+    {
+        padding-right: 2%;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .botonera>a
+    {
+        transition: font-size, 2s, linear, 2s;
+    }
+
+    .botonera>a:hover
+    {
+        font-size: 20px;
+    }
+
+   

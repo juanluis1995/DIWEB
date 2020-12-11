@@ -1,0 +1,59 @@
+
+div.cabecera
+{
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 5%;
+
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@font-face
+{
+    font-family: "Titulo";
+    src: url(../font/lobster.woff);
+}
+
+h1
+{
+    font-family: Titulo;
+    float: left;
+    font-size: 40px;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+img
+{
+    float: left;
+}
+
+.menu
+{
+    float: left;
+    width: 75%;
+    padding-left: 15%;
+
+    ul
+    {
+        border: solid black;
+        text-align: center;
+        padding-right: 13%;
+
+        li
+        {
+            padding: 0 10% 0 10%;
+            display: inline;
+
+            a
+            {
+                color: blue;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+
+footer
+{
+    margin-top: 15%;
+    border-top: 2px black solid;
+    padding-bottom: 2%;
+    font-family: cursive;
+    font-size: 15px;
+    background-color: #2F7999;
+    color: white;
+
+    .h3Contacto
+    {
+        padding-left: 25%;
+    }
+
+    .datos
+    {
+        display: grid;
+        grid-template-columns: 35% 15%;
+        margin-left: 20%;
+    }
+   
+    .mapa
+    {
+        float: left;
+        margin-bottom: 2%;
+        margin-left: 40%;
+    }
+}

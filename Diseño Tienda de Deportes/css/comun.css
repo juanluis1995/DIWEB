@@ -1,0 +1,78 @@
+div.cabecera {
+  text-align: center;
+  padding-top: 0px;
+  padding-left: 5%;
+}
+
+div.cabecera a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "Titulo";
+  src: url(../font/lobster.woff);
+}
+
+h1 {
+  font-family: Titulo;
+  float: left;
+  font-size: 40px;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+img {
+  float: left;
+}
+
+.menu {
+  float: left;
+  width: 75%;
+  padding-left: 15%;
+}
+
+.menu ul {
+  border: solid black;
+  text-align: center;
+  padding-right: 13%;
+}
+
+.menu ul li {
+  padding: 0 10% 0 10%;
+  display: inline;
+}
+
+.menu ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 15%;
+  border-top: 2px black solid;
+  padding-bottom: 2%;
+  font-family: cursive;
+  font-size: 15px;
+  background-color: #2F7999;
+  color: white;
+}
+
+footer .h3Contacto {
+  padding-left: 25%;
+}
+
+footer .datos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 15%;
+      grid-template-columns: 35% 15%;
+  margin-left: 20%;
+}
+
+footer .mapa {
+  float: left;
+  margin-bottom: 2%;
+  margin-left: 40%;
+}
+/*# sourceMappingURL=comun.css.map */

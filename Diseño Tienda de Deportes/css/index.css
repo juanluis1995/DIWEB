@@ -1,0 +1,48 @@
+
+body
+{
+    background:  linear-gradient(#A8F1D6, #3f87a6);
+}
+
+.subCabecera
+{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.contenedorPrincipal
+{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.articulosRuta
+{
+    padding-left: 20%;
+    text-align: justify;
+}
+
+.parrafo1
+{
+    float: left;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.parrafo2
+{
+    float: left;
+    width: 35%;
+}
+        /*TIEMPO*/
+.tiempo
+{
+    margin-top: 20%;
+    margin-right: 30%;
+}
+
+.infoTiempo
+{
+    margin-left: 60%;
+    width: 35%;
+}

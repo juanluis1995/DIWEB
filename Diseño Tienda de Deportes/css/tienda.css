@@ -1,0 +1,67 @@
+
+body
+{
+    background:  linear-gradient(#A8F1D6, #3f87a6);
+}
+
+.h3Cuerpo
+{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-decoration-line: underline;
+}
+
+.subCabecera
+{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.productos
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    column-gap: 5%;
+    row-gap: 30%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.productos>section
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 20% 20;
+}
+
+.productos>section>img
+{
+    width: 210px;
+    height: 190px;
+}
+
+.botonera
+{
+    margin-top: 20%;
+    margin-left: 30%;
+    text-align: center;
+    width: 35%;
+}
+
+.botonera>a
+{
+    padding-right: 2%;
+    text-decoration: none;
+    color: blue;
+}
+
+.botonera>a
+{
+    transition: font-size, 2s, linear, 2s;
+}
+
+.botonera>a:hover
+{
+    font-size: 20px;
+}
