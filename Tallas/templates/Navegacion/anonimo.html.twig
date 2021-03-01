@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#masthead"><img src="../../dist/assets/img/logo.svg" alt="" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#informacion">Información</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tienda">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#registrarse">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ path('app_login') }}">Login</a></li>
+                    {# <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">Login</a>
+                        <ul class="dropdown-menu">
+                        <!--Formulario de Login-->
+                            {% include "security/login.html.twig" %}
+                        </ul>
+                    </li> #}
+                </ul>
+            </div>
+        </div>
+    </nav>

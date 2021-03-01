@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+{% block head %}
+    <meta charset="UTF-8">
+
+    <title>{% block title %} {{titulo}} {% endblock %}</title>
+
+    {% block stylesheets %}
+        <link href="{{ asset('../dist/css/styles.css') }}" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    {% endblock %}
+
+    {% block javascripts %}
+        <link href="{{ asset('../dist/js/scripts.js') }}" rel="javascripts" />
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="../dist/assets/mail/jqBootstrapValidation.js"></script>
+        <script src="../dist/assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="../dist/js/scripts.js"></script>
+    {% endblock %}
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- Navegación-->
+    {#Si el usuario es anónimo          {% include "Navegacion/anonimo.html.twig" %}
+    Si el usuario está logueado         {% include "Navegacion/logueado.html.twig" %}
+    Si el usuario es el administrador todo se realizará en una plantilla a parte   {% include "Navegacion/admin.html.twig" %}#}
+
+{% block navegacion %}{% endblock %}
+
+{% block masthead %}
+    <!-- Masthead-->
+    <header class="masthead" id="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Bienvenido a nuestra Web</div>
+            <div class="masthead-heading text-uppercase">Tallas hechas de manera artesanal</div>
+        </div>
+    </header>
+{% endblock %}
+
+<!--Usuarios anónimos-->
+{% block informacion %}{% endblock %}
+
+{% block portfolio %}{% endblock %} 
+
+{% block contacto %}{% endblock %}
+
+{% block tienda %}{% endblock %}
+
+{% block registro %}{% endblock %}
+
+
+<!--Para usuarios logueados-->
+{% block pedidos %}{% endblock %}
+{% block carrito %}{% endblock %}
+
+<!--Administrador-->
+{% block gestion_usuarios %}{% endblock %}
+{% block gestion_tallas %}{% endblock %}
+{% block gestion_pedidos %}{% endblock %}
+
+<!--Footer-->
+{% block footer %}
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-left">Juan Luis Paulano Torres - 2021</div>
+                <div class="col-lg-6 text-lg-right">Tecnologías utilizadas: <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Boostrap 4</a>-<a href="https://symfony.com/5">Symfony 5</a>-<a href="https://jquery.com/">JQuery</a></div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+
+
+    <!-- Imágenes del Portfolio (Ventanas Modales)-->
+    <!-- Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="../dist/assets/img/close-icon.svg" alt="Cerrar" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">"El oriental"</h2>
+                                <p class="item-intro text-muted">Talla que toma la forma de un hombre oriental</p>
+                                <img class="img-fluid d-block mx-auto" src="../dist/assets/img/portfolio/01-full.jpg" alt="" />
+                                <p></p>
+                                <ul class="list-inline">
+                                    <li>Fecha: Enero 2020</li>
+                                    <li>Cliente: José Espinosa</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Cerrar imagen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="../dist/assets/img/close-icon.svg" alt="Cerrar" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">"León"</h2>
+                                <p class="item-intro text-muted">Talla de un león creado para un amante de la sabana africana</p>
+                                <img class="img-fluid d-block mx-auto" src="../dist/assets/img/portfolio/02-full.jpg" alt="" />
+                                <ul class="list-inline">
+                                    <li>Fecha: Agosto 2019</li>
+                                    <li>Cliente: Jesús Gutiérrez</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Cerrar imagen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="../dist/assets/img/close-icon.svg" alt="Cerrar" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">"Noche lobuna"</h2>
+                                <p class="item-intro text-muted">Tallado de un lobo enrte los árboles</p>
+                                <img class="img-fluid d-block mx-auto" src="../dist/assets/img/portfolio/03-full.png" alt="" />
+                                <ul class="list-inline">
+                                    <li>Fecha: Diciembre 2020</li>
+                                    <li>Cliente: Elena Ortega</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Cerrar imagen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="../dist/assets/img/close-icon.svg" alt="Cerrar" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">"Macetero"</h2>
+                                <p class="item-intro text-muted">Macetero creado para el propio uso del tallista</p>
+                                <img class="img-fluid d-block mx-auto" src="../dist/assets/img/portfolio/04-full.jpg" alt="" />
+                                <ul class="list-inline">
+                                    <li>Fecha: Marzo 2019</li>
+                                    <li>Cliente: Tallista</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Cerrar imagen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="../dist/assets/img/close-icon.svg" alt="Cerrar" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">"El arte del esgrima"</h2>
+                                <p class="item-intro text-muted">Figura de un deportista entrenado para la esgrima</p>
+                                <img class="img-fluid d-block mx-auto" src="../dist/assets/img/portfolio/05-full.jpg" alt="" />
+                                <ul class="list-inline">
+                                    <li>Fecha: Julio 2020</li>
+                                    <li>Cliente: Rubén Machado</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Cerrar imagen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="../dist/assets/img/close-icon.svg" alt="Cerrar" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">"Posavasos"</h2>
+                                <p class="item-intro text-muted">Posavasos de madera</p>
+                                <img class="img-fluid d-block mx-auto" src="../dist/assets/img/portfolio/06-full.jpg" alt="" />
+                                <ul class="list-inline">
+                                    <li>Fecha: Agosto 2019</li>
+                                    <li>Cliente: Gema Escribano</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Cerrar imagen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

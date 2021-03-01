@@ -1,0 +1,223 @@
+{% extends "base.html.twig" %}
+
+{% block navegacion %}
+    {% include "Navegacion/anonimo.html.twig" %}
+{% endblock %}
+
+
+{% block informacion %}
+    <section class="page-section" id="informacion">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Información</h2>
+                <h3 class="section-subheading text-muted" style="margin-top: 10%;">Este sitio web ha sido diseñado con la idea de hacer ver al cliente el trabajo laborioso y
+                    la disciplina necesaria que implica realizar tallas de madera para obtener el resultado deseado y un gran nivel de detalle en el
+                    resultado final</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Compra</h4>
+                    <p class="text-muted">Regístrese y acceda a la lista de tallas que se han creado para poder adquirir todas las que desee
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <video width="320" height="240" controls>
+                        <source src="../dist/assets/video/1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="far fa-comment-dots fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Solicite</h4>
+                    <p class="text-muted">Contacte con el administrador y pida su propia talla personalizada para obtener la que más se adapte a sus gustos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block portfolio %}
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Portfolio</h2>
+                <h3 class="section-subheading text-muted">A continuación se muestran algunos de los trabajos realizados</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="../dist/assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                        </a>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="../dist/assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="../dist/assets/img/portfolio/03-thumbnail.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="../dist/assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="../dist/assets/img/portfolio/05-thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="../dist/assets/img/portfolio/06-thumbnail.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block contacto %}
+    <section class="page-section bg-light" id="contacto">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contacto</h2>
+                <h3 class="section-subheading text-muted">Para consultar dudas o ponerse en contacto con algún integrante del equipo</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="../dist/assets/img/team/1.jpg" alt="Desarrollador" />
+                        <h4>Juan Luis Paulano Torres</h4>
+                        <p class="text-muted">Desarrollador de la web</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope-square"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/juanluis1995/DIWEB"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="../dist/assets/img/team/2.jpg" alt="Tallista" />
+                        <h4>Jose García Lucena</h4>
+                        <p class="text-muted">Tallista</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fas fa-envelope-square"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block tienda %}
+    <section class="page-section bg-light" id="tienda">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Tienda</h2>
+                <h3 class="section-subheading text-muted">Tallas disponibles para su compra en línea</h3>
+            </div>
+            <div class="row">
+                {% include "Tienda/anonimo.html.twig" %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block registro %}
+<div class="row" id="formularios">
+    <section class="page-section col-lg-12" id="registrarse">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Formulario de Registro</h2>
+            </div>
+
+            {% include "registration/register.html.twig" %}
+        </div>
+    </section>
+{#
+    <section class="page-section col-lg-6" id="loguearse">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Formulario de Login</h2>
+            </div>
+
+            {% include "security/login.html.twig" %}
+        </div>
+    </section>
+#}
+    
+</div>
+<!--
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="txtUsuario" type="text" placeholder="Usuario" required="required" data-validation-required-message="Introduce el nombre de usuario" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="txtContraseña" type="password" placeholder="Contraseña" required="required" data-validation-required-message="Introduce la contraseña" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="txtReContraseña" type="password" placeholder="Repita contraseña" required="required" data-validation-required-message="Repite la contraseña" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="txtCorreo" type="password" placeholder="Correo electrónico" required="required" data-validation-required-message="Introduce el correo" />
+                            <p class="help-block text-danger"></p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Registrar</button>
+                </div>
+            </form>
+-->
+
+        
+
+{% endblock %}

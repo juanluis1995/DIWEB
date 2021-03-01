@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Usuario{% endblock %}
+
+
+{% block body %}
+
+    <section class="page-section col-lg-12" id="loguearse">
+        <div class="container" style="text-align: justify;">
+            <h2>Datos del Usuario</h2>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Id</th>
+                        <td>{{ user.id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>{{ user.nombre }}</td>
+                    </tr>
+        
+                    <tr>
+                        <th>Roles</th>
+                        <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+                    </tr>
+        {#
+                    <tr>
+                        <th>Password</th>
+                        <td>{{ user.password }}</td>
+                    </tr>
+        #}
+                    <tr>
+                        <th>Correo</th>
+                        <td>{{ user.correo }}</td>
+                    </tr>
+        {#
+                    <tr>
+                        <th>IsVerified</th>
+                        <td>{{ user.isVerified ? 'Yes' : 'No' }}</td>
+                    </tr>
+        #}
+                </tbody>
+            </table>
+
+            <a href="{{ path('admin') }}" style="margin-right: 20%;">Volver</a>
+
+            <a href="{{ path('user_edit', {'id': user.id}) }}">Editar</a>
+        </div>
+    </section>
+{% endblock %}

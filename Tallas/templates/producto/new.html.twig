@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nuevo Producto{% endblock %}
+
+{% block body %}
+    <section class="page-section col-lg-12" id="loguearse">
+        <div class="container" style="text-align: justify;">
+            <h1>Nuevo Producto</h1>
+
+            {{ include('producto/_form.html.twig') }}
+
+            <a href="{{ path('admin') }}">Volver</a>
+        </div>
+    </section>
+{% endblock %}

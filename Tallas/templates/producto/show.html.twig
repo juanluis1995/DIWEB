@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Producto{% endblock %}
+
+{% block body %}
+    <section class="page-section col-lg-12" id="loguearse">
+        <div class="container" style="text-align: justify;">
+            <h1>Producto</h1>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Id</th>
+                        <td>{{ producto.id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Precio</th>
+                        <td>{{ producto.precio }}</td>
+                    </tr>
+                    <tr>
+                        <th>Tamaño</th>
+                        <td>{{ producto.tamanio }}</td>
+                    </tr>
+                    <tr>
+                        <th>Fotografía</th>
+                        <td><img src="../../dist/assets/img/tallas/{{ producto.fotografia }}" height="200" width="150"></td>
+                    </tr>
+                    <tr>
+                        <th>Descripción</th>
+                        <td>{{ producto.descripcion }}</td>
+                    </tr>
+                    <tr>
+                        <th>Existencias</th>
+                        <td>{{ producto.existencias }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="{{ path('admin') }}" style="margin-right: 20%;">Volver</a>
+
+            <a href="{{ path('producto_edit', {'id': producto.id}) }}">Editar</a>
+
+        </div>
+    </section>
+{% endblock %}

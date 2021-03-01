@@ -1,0 +1,57 @@
+{% extends "base.html.twig" %}
+
+{% block navegacion %}
+    {% include "Navegacion/admin.html.twig" %}
+{% endblock %}
+
+{% block masthead %}
+    <!-- Masthead-->
+    <header class="masthead_admin" id="masthead_admin">
+        <div class="container">
+            <div class="masthead-subheading">Administración del sitio web</div>
+            <div class="masthead-heading text-uppercase">Bienvenido</div>
+        </div>
+    </header>
+{% endblock %}
+
+
+{% block gestion_usuarios %}
+    <section class="page-section bg-light" id="usuarios">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Gestión de Usuarios</h2>
+            </div>
+            <div class="row">
+                {% include "user/index.html.twig" %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block gestion_tallas %}
+    <section class="page-section bg-light" id="tallas">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Gestión de Tallas</h2>
+            </div>
+            <div class="row">
+                {% include "producto/index.html.twig" %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{#
+{% block gestion_pedidos %}
+    <section class="page-section bg-light" id="pedidos">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Gestión de Pedidos</h2>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+{% endblock %}
+#}

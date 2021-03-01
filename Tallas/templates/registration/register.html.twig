@@ -1,0 +1,44 @@
+
+{% block body %}
+    {% for flashError in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+
+    <div class="row align-items-stretch mb-5" id="formRegistro">
+        <div class="col-md-12 text-light">
+            {{ form_start(registrationForm) }}
+            
+            {{ form_row(registrationForm.nombre, {'attr': {'class':'form-control'}})}}
+            <!--<input class="form-control" id="txtUsuario" type="text" placeholder="Usuario" required="required" data-validation-required-message="Introduce el nombre de usuario" />
+            <p class="help-block text-danger"></p>-->
+        
+        
+            {{ form_row(registrationForm.password.first, {'attr': {'class':'form-control'}}) }}
+            <!--<input class="form-control" id="txtContraseña" type="password" placeholder="Contraseña" required="required" data-validation-required-message="Introduce la contraseña" />
+            <p class="help-block text-danger"></p>-->
+        
+            {{ form_row(registrationForm.password.second, {'attr': {'class':'form-control'}}) }}
+            <!--<input class="form-control" id="txtContraseña" type="password" placeholder="Contraseña" required="required" data-validation-required-message="Introduce la contraseña" />
+            <p class="help-block text-danger"></p>-->
+            
+{#
+            <div class="form-group">
+                <input class="form-control" id="txtReContraseña" type="password" placeholder="Repita contraseña" required="required" data-validation-required-message="Repite la contraseña" />
+                <p class="help-block text-danger"></p>
+            </div>
+#}
+            
+            {{ form_row(registrationForm.correo, {'attr': {'class':'form-control'}}) }}
+            <!--<input class="form-control" id="txtCorreo" type="password" placeholder="Correo electrónico" required="required" data-validation-required-message="Introduce el correo" />
+            <p class="help-block text-danger"></p>-->
+
+        </div>
+    </div>
+
+        <div class="text-center">
+            <div id="success"></div>
+            <button class="btn btn-lg btn-primary" type="submit" >Registrarse</button>
+        </div>
+
+    {{ form_end(registrationForm) }}
+{% endblock %}

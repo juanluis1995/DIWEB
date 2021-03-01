@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Producto {% endblock %}
+
+{% block body %}
+
+        <table class="table" style="margin-top: 5%;">
+            <thead id="cabecera">
+                <tr>
+                    <th>Id</th>
+                    <th>Precio</th>
+                    <th>Tamaño</th>
+                    <th>Fotografía</th>
+                    <th>Descripción</th>
+                    <th>Existencias</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for producto in productos %}
+                <tr>
+                    <td>{{ producto.id }}</td>
+                    <td>{{ producto.precio }}</td>
+                    <td>{{ producto.tamanio }}</td>
+                    <td><img src="../../dist/assets/img/tallas/{{ producto.fotografia }}" height="50" width="50"></td>
+                    <td>{{ producto.descripcion }}</td>
+                    <td>{{ producto.existencias }}</td>
+                    <td>
+                        <a href="{{ path('producto_show', {'id': producto.id}) }}" style="margin-right: 20%;">Mostrar</a>
+                        <a href="{{ path('producto_edit', {'id': producto.id}) }}">Editar</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="7" style="color: red;">No hay tallas disponibles</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    <a href="{{ path('producto_new') }}">Nuevo producto</a>
+{% endblock %}
