@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Agency v6.0.3 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10066,15 +10056,7 @@ img::-moz-selection {
   text-transform: uppercase;
   background-color: #8a7b44;
 }
-/*
-#mainNav .navbar-brand {
-  color: #fed136;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  letter-spacing: 0.0625em;
-  text-transform: uppercase;
-}
-*/
+
 #mainNav .navbar-brand img, #mainNav_admin .navbar-brand img{
   height: 11rem;
 }
@@ -10125,13 +10107,7 @@ img::-moz-selection {
     height: 8rem;
     transition: height 2s ease-in-out;
   }
-/*
-  #mainNav.navbar-shrink, #mainNav_admin.navbar-shrink{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #212529;
-  }
-*/
+
   #mainNav.navbar-shrink .navbar-brand, #mainNav_admin.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
@@ -10542,6 +10518,15 @@ section#loguearse {
 
 form.formLogin {
   text-align: justify;
+}
+
+/*Aumento de las imágenes de la tienda*/
+section#tienda img, section#tallas img {
+  transition: transform .5s;
+}
+
+section#tienda img:hover, section#tallas img:hover {
+  transform: scale(10);
 }
 
 .footer {
